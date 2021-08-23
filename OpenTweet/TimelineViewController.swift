@@ -68,6 +68,9 @@ class TimelineViewController: UIViewController {
         tableView.register(TweetTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 100
     }
     
 }

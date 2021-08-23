@@ -134,8 +134,8 @@ class TweetTableViewCell: UITableViewCell {
         let view = UILabel()
         view.font = UIFont(name: "Helvetica", size: 15.0)
         view.numberOfLines = 0
-        //view.adjustsFontSizeToFitWidth = true
-        //view.minimumScaleFactor = 0.5
+        view.adjustsFontSizeToFitWidth = true
+        view.minimumScaleFactor = 0.5
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
