@@ -21,7 +21,10 @@ extension TimelineViewController: UITableViewDelegate, UITableViewDataSource {
         cell.convertDate(tweets[indexPath.row].date)
         if let inReplyTo = tweets[indexPath.row].inReplyTo {
             cell.createAttributeStr(inReplyTo)
-        } 
+            cell.reply.isHidden = false
+        } else {
+            cell.reply.isHidden = true
+        }
         cell.content.text = tweets[indexPath.row].content
         return cell
     }
